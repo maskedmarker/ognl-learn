@@ -6,6 +6,7 @@ public class Person {
 
     private String name;
     private int age;
+    private String sex;
 
     public String getName() {
         return name;
@@ -23,11 +24,20 @@ public class Person {
         this.age = age;
     }
 
+    public String getSex() {
+        return sex;
+    }
+
+    public void setSex(String sex) {
+        this.sex = sex;
+    }
+
     @Override
     public String toString() {
         return new StringJoiner(", ", Person.class.getSimpleName() + "[", "]")
                 .add("name='" + name + "'")
                 .add("age=" + age)
+                .add("sex='" + sex + "'")
                 .toString();
     }
 }
