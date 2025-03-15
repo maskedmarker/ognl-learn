@@ -39,6 +39,9 @@ public class HelloTest {
         // 使用OGNL表达式调用对象方法
         Integer age = (Integer) Ognl.getValue("getAge()", person);
         System.out.println("Age: " + age);
+        // 表达式中使用方法
+        Integer nameLength = (Integer) Ognl.getValue("getName().length", person);
+        System.out.println("nameLength = " + nameLength);
 
         // 使用OGNL表达式调用静态方法
         String staticValue = (String) Ognl.getValue("@java.lang.String@valueOf(123)", person);
