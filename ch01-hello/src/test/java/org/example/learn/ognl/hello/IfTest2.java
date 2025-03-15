@@ -8,6 +8,8 @@ import org.junit.jupiter.api.Test;
 
 /**
  * 在比较是否相等时, ognl试图先将operand转换为数值类型来比大小
+ *
+ * 其中有一个是number类型的,就试图将左右operand转换为number类型
  */
 public class IfTest2 {
 
