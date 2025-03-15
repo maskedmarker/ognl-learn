@@ -53,7 +53,7 @@ public class IfTest {
         System.out.println("sexEq = " + sexEq);
         Assertions.assertFalse(sexEq);
 
-        sexEq = (boolean) Ognl.getValue("sex==1", person);
+        sexEq = (boolean) Ognl.getValue("sex== 1", person);
         System.out.println("sexEq = " + sexEq);
         Assertions.assertTrue(sexEq);
     }
